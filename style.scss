@@ -32,6 +32,7 @@ div.hero{
     width: 48%;
     margin: 5px 0 0 5px;
 }
+
 .space-around{
     display: flex;
     justify-content: space-around!important;
@@ -62,7 +63,20 @@ div.hero{
 .dropdown-item{
     color: whitesmoke;
 }
-
+.btn-doni{
+    background-color: blueviolet;
+    color: white;
+}
+.btn-doni:hover{
+    background-color: rgb(91, 5, 170);
+    color: rgb(221, 221, 221);
+}
+.tengah{
+    margin: 0 auto;
+    width: 200px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
 
 
 
@@ -95,7 +109,9 @@ div.hero{
     }
     .card{
         width: 24%!important;
+        margin: 10px 0 !important;
     }
+    
     .desc{
         width: 470px;
         margin: 0 auto;

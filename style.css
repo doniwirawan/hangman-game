@@ -78,6 +78,23 @@ div.hero {
   color: whitesmoke;
 }
 
+.btn-doni {
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn-doni:hover {
+  background-color: #5b05aa;
+  color: #dddddd;
+}
+
+.tengah {
+  margin: 0 auto;
+  width: 200px;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     margin: 0 5px;
@@ -106,6 +123,7 @@ div.hero {
   }
   .card {
     width: 24% !important;
+    margin: 10px 0 !important;
   }
   .desc {
     width: 470px;
