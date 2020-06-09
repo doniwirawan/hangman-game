@@ -3,6 +3,10 @@
           box-sizing: content-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn.blueviolet {
   background-color: blueviolet;
   color: whitesmoke;
@@ -95,6 +99,15 @@ div.hero {
   border-radius: 50px;
 }
 
+.tombol-tengah {
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.text-tengah {
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     margin: 0 5px;
@@ -141,6 +154,13 @@ div.hero {
   }
   .navbar-collapse li {
     border-bottom: none;
+  }
+  .tombol-tengah {
+    width: 25%;
+    margin: 0 auto !important;
+  }
+  .text-tengah {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
