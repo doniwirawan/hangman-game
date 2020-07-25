@@ -121,6 +121,13 @@ div.hero {
   color: blueviolet;
 }
 
+.alertku {
+  position: fixed;
+  top: 300px;
+  left: 30%;
+  opacity: .3;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     margin: 0 5px;
