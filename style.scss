@@ -19,6 +19,8 @@ div.bg-image{
     background-size: cover;
     background-repeat: no-repeat;
     filter: saturate(80%);
+    background-attachment: fixed;
+    
 
 }
 .btn.blueviolet:hover{

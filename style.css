@@ -24,6 +24,7 @@ div.bg-image {
   background-repeat: no-repeat;
   -webkit-filter: saturate(80%);
           filter: saturate(80%);
+  background-attachment: fixed;
 }
 
 .btn.blueviolet:hover {
