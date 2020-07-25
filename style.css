@@ -113,8 +113,12 @@ div.hero {
   display: none;
 }
 
-.show {
-  display: block;
+.hiddens {
+  display: none;
+}
+
+.text-accent {
+  color: blueviolet;
 }
 
 @media (min-width: 992px) {
