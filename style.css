@@ -109,6 +109,14 @@ div.hero {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     margin: 0 5px;
