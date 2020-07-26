@@ -117,6 +117,10 @@ div.hero {
   display: none;
 }
 
+.hiddenss {
+  display: none;
+}
+
 .text-accent {
   color: blueviolet;
 }
@@ -150,6 +154,12 @@ div.hero {
   position: relative;
   left: -10px;
   top: -10px;
+}
+
+.item-center {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -216,6 +226,12 @@ div.hero {
     position: relative;
     left: -10px;
     top: -10px;
+  }
+  .item-center {
+    margin: 0 auto;
+    position: relative;
+    left: 25%;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

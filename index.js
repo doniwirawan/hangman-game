@@ -4,3 +4,6 @@ $('#btnToggle').click(function(){
 $('#contactUs').click(function(){
     $('.hiddens').toggle(1200);
 });
+$('#gallery').click(function () {
+    $('.hiddenss').toggle(1200);
+});

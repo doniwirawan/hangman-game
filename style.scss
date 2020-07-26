@@ -94,6 +94,10 @@ div.hero{
 .hiddens {
     display: none;
 }
+.hiddenss {
+    display: none;
+    
+}
 .text-accent{
     color:blueviolet;
 }
@@ -119,7 +123,12 @@ div.hero{
         top: -10px;
     }
 }
-
+.item-center {
+    margin: 0 auto;
+    position: relative;
+    // left: 24%;
+    width: 100%;
+}
 @media (min-width: 992px) {
     .nav-item {
         margin: 0 5px;
@@ -188,5 +197,10 @@ div.hero{
             top: -10px;
         }
     }
-    
+    .item-center{
+        margin: 0 auto;
+        position: relative;
+        left: 25%;
+        width: 50%;
+    }
 }
