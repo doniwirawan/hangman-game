@@ -103,6 +103,22 @@ div.hero{
     left: 30%;
     opacity: .3;
 }
+.column-display{
+    display: flex;
+    flex-direction: column;
+}
+.gallery{
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    img{
+        height: 300px;
+        background-size: cover;
+        position: relative;
+        left: -10px;
+        top: -10px;
+    }
+}
 
 @media (min-width: 992px) {
     .nav-item {
@@ -160,6 +176,17 @@ div.hero{
     .text-tengah{
         text-align: left;
     }
-    
+    .gallery {
+        width: 25%;
+        height: 300px;
+        overflow: hidden;
+
+        img {
+            height: 400px;
+            position: relative;
+            left: -10px;
+            top: -10px;
+        }
+    }
     
 }
