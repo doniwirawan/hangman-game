@@ -129,6 +129,15 @@ div.hero{
     // left: 24%;
     width: 100%;
 }
+.blueviolet a{
+    color: blueviolet;
+}
+.mini-background{
+    background-image: url(img/pablo-garcia-saldana-K1YRblz-rD0-unsplash.jpg);
+    background-attachment:fixed;
+    background-size: cover;
+}
+
 @media (min-width: 992px) {
     .nav-item {
         margin: 0 5px;
