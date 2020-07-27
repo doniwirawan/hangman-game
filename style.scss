@@ -1,9 +1,11 @@
 .selector-for-some-widget {
     box-sizing: content-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .btn.blueviolet {
     background-color: blueviolet;
     color: whitesmoke;
@@ -14,108 +16,131 @@ html{
 input.form-control {
     border-radius: 30px 0 0 30px;
 }
-div.bg-image{
+
+div.bg-image {
     background-image: url(img/sutirta-budiman-DxmBSgUYKis-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: saturate(80%);
     background-attachment: fixed;
-    
+
 
 }
-.btn.blueviolet:hover{
+
+.btn.blueviolet:hover {
     background-color: rgb(91, 5, 170);
     color: rgb(221, 221, 221);
 }
 
-div.hero{
+div.hero {
     margin-top: 65px !important;
     padding-bottom: 110px;
 }
-.card{
+
+.card {
     width: 48%;
     margin: 5px 0 0 5px;
 }
 
-.space-around{
+.space-around {
     display: flex;
-    justify-content: space-around!important;
+    justify-content: space-around !important;
 }
-.changes{
+
+.changes {
     overflow: hidden;
 }
-.changePos{
+
+.changePos {
     position: relative;
     top: -22px;
 }
-.changes h5{
+
+.changes h5 {
     margin-top: -22px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
     font-size: 1.5em;
 }
-.navbar-collapse li{
-    border-bottom:1px solid #eaeaea ;
+
+.navbar-collapse li {
+    border-bottom: 1px solid #eaeaea;
 }
-.dropdown-menu.show{
+
+.dropdown-menu.show {
     background: transparent;
     padding: 1px 1px;
     margin-bottom: 5px;
     border: 1px solid #eaeaeaea;
 }
-.dropdown-item{
+
+.dropdown-item {
     color: whitesmoke;
 }
-.btn-doni{
+
+.btn-doni {
     background-color: blueviolet;
     color: white;
 }
-.btn-doni:hover{
+
+.btn-doni:hover {
     background-color: rgb(91, 5, 170);
     color: rgb(221, 221, 221);
 }
-.tengah{
+
+.tengah {
     margin: 0 auto;
     width: 200px;
     margin: 20px 0;
     border-radius: 50px;
 }
-.tombol-tengah{
+
+.tombol-tengah {
     width: 100%;
-    margin:0 auto !important;
+    margin: 0 auto !important;
 }
-.text-tengah{
+
+.text-tengah {
     text-align: center;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
 .hiddens {
     display: none;
 }
+
 .hiddenss {
     display: none;
-    
+
 }
-.text-accent{
-    color:blueviolet;
+
+.text-accent {
+    color: blueviolet;
 }
-.alertku{
+
+.alertku {
     position: fixed;
     top: 300px;
     left: 30%;
     opacity: .3;
 }
-.column-display{
+
+.column-display {
     display: flex;
     flex-direction: column;
 }
-.gallery{
+
+.gallery {
     width: 50%;
     height: 200px;
     overflow: hidden;
-    img{
+
+    img {
         height: 300px;
         background-size: cover;
         position: relative;
@@ -123,18 +148,21 @@ div.hero{
         top: -10px;
     }
 }
+
 .item-center {
     margin: 0 auto;
     position: relative;
     // left: 24%;
     width: 100%;
 }
-.blueviolet a{
+
+.blueviolet a {
     color: blueviolet;
 }
-.mini-background{
+
+.mini-background {
     background-image: url(img/pablo-garcia-saldana-K1YRblz-rD0-unsplash.jpg);
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -149,51 +177,63 @@ div.hero{
         margin-left: -90px;
         padding: 6px 40px;
     }
-    .btn.blueviolet:hover{
+
+    .btn.blueviolet:hover {
         background-color: rgb(91, 5, 170);
         color: rgb(221, 221, 221);
     }
-    div.hero{
+
+    div.hero {
         margin-top: 125px !important;
         padding-bottom: 165px;
     }
-    div.bg-image{
+
+    div.bg-image {
         background-image: url(img/sutirta-budiman-DxmBSgUYKis-unsplash.jpg);
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
-    .formSearch{
+
+    .formSearch {
         margin-left: -30px;
     }
-    .card{
-        width: 24%!important;
+
+    .card {
+        width: 24% !important;
         margin: 10px 0 !important;
     }
-    
-    .desc{
+
+    .desc {
         width: 470px;
         margin: 0 auto;
     }
-    .changes{
+
+    .changes {
         overflow: hidden;
     }
-    .changePos{
+
+    .changePos {
         position: relative;
         top: -28px;
     }
-    .changes h5{
+
+    .changes h5 {
         margin-top: -32px;
     }
-    .navbar-collapse li{
-        border-bottom:none;
+
+    .navbar-collapse li {
+        border-bottom: none;
     }
-    .tombol-tengah{
+
+    .tombol-tengah {
         width: 25%;
-        margin:0 auto !important;
+        margin: 0 auto !important;
     }
-    .text-tengah{
+
+    .text-tengah {
         text-align: left;
     }
+
     .gallery {
         width: 25%;
         height: 300px;
@@ -206,7 +246,8 @@ div.hero{
             top: -10px;
         }
     }
-    .item-center{
+
+    .item-center {
         margin: 0 auto;
         position: relative;
         left: 25%;
