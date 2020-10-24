@@ -9,12 +9,12 @@ const figureParts = document.querySelectorAll('.figure-part');
 
 const words = ['doni','wirawan','desember','coding','programming'];
 
-// const url =	'http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
+// const url =	'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
 // function getRandomWord() {
 // 	fetch(url)
 // 		.then(res => res.json)
 // 		.then(data => {
-// 			console.log(data[0] + 'test')
+// 			console.log(data.word)
 // 		})
 // }
 // getRandomWord();
