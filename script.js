@@ -43,7 +43,7 @@ function displayWord(){
 	const innerWord = wordEl.innerText.replace(/\n/g, '');
 
 	if(innerWord === selectedWord){
-		finalMessage.innerText = 'selamat anda menang!🤩';
+		finalMessage.innerText = 'Selamat anda menang!🤩';
 		popup.style.display = 'flex';
 	}
 }
