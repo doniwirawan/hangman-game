@@ -7,12 +7,12 @@ const finalMessage = document.querySelector('#final-message');
 
 const figureParts = document.querySelectorAll('.figure-part');
 
-const words = ['doni','wirawan','desember','coding','programming'];
+const words = ['doni', 'wirawan', 'desember', 'coding', 'programming'];
 
-// const url =	'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
+// const url = 'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
 // function getRandomWord() {
 // 	fetch(url)
-// 		.then(res => res.json)
+// 		.then(res => res)
 // 		.then(data => {
 // 			console.log(data.word)
 // 		})
@@ -20,29 +20,30 @@ const words = ['doni','wirawan','desember','coding','programming'];
 // getRandomWord();
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
+// let selectedWord = data.word;
 
 const correctLetters = [];
 const wrongLetters = [];
 
 //show hidden word
-function displayWord(){
+function displayWord() {
 	wordEl.innerHTML = `
 		${selectedWord
 			.split('')
-			.map( letter => `
+			.map(letter => `
 
 					<span class="letter">
 						${correctLetters.includes(letter) ? letter : ''}
 					</span>
 				`
-				)
+			)
 			.join('')
 		}
 
 	`;
 	const innerWord = wordEl.innerText.replace(/\n/g, '');
 
-	if(innerWord === selectedWord){
+	if (innerWord === selectedWord) {
 		finalMessage.innerText = 'Selamat anda menang!🤩';
 		popup.style.display = 'flex';
 	}
@@ -50,7 +51,7 @@ function displayWord(){
 
 
 // update the wrong letters 
-function updateWrongLettersEl(){
+function updateWrongLettersEl() {
 
 	//display wrong letters
 	wrongLettersEl.innerHTML = `
@@ -61,14 +62,14 @@ function updateWrongLettersEl(){
 	//display parts
 	figureParts.forEach((part, index) => {
 		const errors = wrongLetters.length;
-		if(index < errors){
+		if (index < errors) {
 			part.style.display = 'block';
-		}else{
+		} else {
 			part.style.display = 'none';
 		}
 	});
 	//check if lost
-	if(wrongLetters.length === figureParts.length){
+	if (wrongLetters.length === figureParts.length) {
 		finalMessage.innerText = 'Sayang sekali anda kalah. 😥';
 		popup.style.display = 'flex';
 	}
@@ -78,12 +79,12 @@ function updateWrongLettersEl(){
 
 
 // show notification
-function showNotification(){
+function showNotification() {
 	notification.classList.add('show');
 
-	setTimeout( () =>{
+	setTimeout(() => {
 		notification.classList.remove('show');
-	},2000);
+	}, 2000);
 
 }
 
@@ -93,23 +94,23 @@ function showNotification(){
 
 // keydown letter press 
 window.addEventListener('keydown', e => {
-	if(e.keyCode >=65 && e.keyCode <=90 ){
+	if (e.keyCode >= 65 && e.keyCode <= 90) {
 		const letter = e.key;
 
-		if(selectedWord.includes(letter)){
-			if(!correctLetters.includes(letter)){
+		if (selectedWord.includes(letter)) {
+			if (!correctLetters.includes(letter)) {
 				correctLetters.push(letter);
 
 				displayWord();
-			}else{
+			} else {
 				showNotification();
 			}
-		}else{
-			if(!wrongLetters.includes(letter)){
+		} else {
+			if (!wrongLetters.includes(letter)) {
 				wrongLetters.push(letter);
 
 				updateWrongLettersEl();
-			}else{
+			} else {
 				showNotification();
 			}
 		}
@@ -118,7 +119,7 @@ window.addEventListener('keydown', e => {
 
 //restar the game and play again
 
-playAgainBtn.addEventListener('click', () =>{
+playAgainBtn.addEventListener('click', () => {
 	correctLetters.splice(0);
 	wrongLetters.splice(0);
 
@@ -132,9 +133,9 @@ playAgainBtn.addEventListener('click', () =>{
 });
 
 // when game is over we press enter and start again
-window.addEventListener('keydown', e =>{
+window.addEventListener('keydown', e => {
 	// console.log(e.keyCode);
-	if(e.keyCode == 13){
+	if (e.keyCode == 13) {
 		correctLetters.splice(0);
 		wrongLetters.splice(0);
 
