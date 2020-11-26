@@ -1,8 +1,8 @@
-*{
+* {
 	box-sizing: border-box;
 }
 
-body{
+body {
 	background-color: #34495e;
 	color: #fff;
 	font-family: Roboto, sans-serif;
@@ -10,13 +10,15 @@ body{
 	flex-direction: column;
 	align-items: center;
 	height: 80vh;
-	margin:0;
+	margin: 0;
 	overflow: hidden;
 }
-h1{
+
+h1 {
 	margin: 20px 0 0;
 }
-.game-container{
+
+.game-container {
 	padding: 20px 30px;
 	position: relative;
 	margin: auto;
@@ -24,38 +26,45 @@ h1{
 	width: 450px;
 }
 
-.figure-container{
+.figure-container {
 	fill: transparent;
 	stroke: #fff;
-	stroke-width:4px;
+	stroke-width: 4px;
 	stroke-linecap: round;
 }
-.figure-part{
+
+.figure-part {
 	display: none;
+	stroke: red;
+
 }
 
-.wrong-letters-container{
+.wrong-letters-container {
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	display: flex;
 	flex-direction: column;
-	text-align:right;
+	text-align: right;
 }
-.wrong-letters-container p{
+
+.wrong-letters-container p {
 	margin: 0 0 5px;
 }
-.wrong-letters-container span{
+
+.wrong-letters-container span {
 	font-size: 24px;
 }
-.word{
+
+.word {
 	display: flex;
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 }
-.letter{
+
+.letter {
 	border-bottom: 3px solid #2980b9;
 	display: inline-flex;
 	font-size: 30px;
@@ -66,8 +75,8 @@ h1{
 	width: 20px;
 }
 
-.popup-container{
-	background-color: rgba(0,0,0,0.3);
+.popup-container {
+	background-color: rgba(0, 0, 0, 0.3);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -78,40 +87,46 @@ h1{
 	align-items: center;
 	justify-content: center;
 }
-.popup{
+
+.popup {
 	background-color: #2980b9;
 	border-radius: 5px;
-	box-shadow: 0 15px 10px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
 	padding: 20px;
-	text-align:center;
+	text-align: center;
 }
-.popup button{
+
+.popup button {
 	cursor: pointer;
 	background-color: #fff;
 	color: #2980b9;
-	border:0;
+	border: 0;
 	margin-top: 20px;
 	padding: 12px 20px;
 	font-size: 16px;
 }
-.popup button:active{
+
+.popup button:active {
 	transform: scale(0.98);
 }
-.popup button:focus{
+
+.popup button:focus {
 	outline: 0;
 }
 
-.notification-container{
-	background-color: rgba(0,0,0,0.3);
+.notification-container {
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 10px 10px 0 0;
 	padding: 15px 20px;
 	position: absolute;
 	bottom: -50px;
 	transition: transform 0.3s ease-in-out;
 }
-.notification-container p{
+
+.notification-container p {
 	margin: 0;
 }
-.notification-container.show{
+
+.notification-container.show {
 	transform: translateY(-50px);
 }
