@@ -254,7 +254,6 @@ const words = ["doni", "wirawan", "desember", "coding", "programming", "ability"
 ];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-// let selectedWord = data.word;
 
 const correctLetters = [];
 const wrongLetters = [];
