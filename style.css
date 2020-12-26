@@ -1,9 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
  * {
    box-sizing: border-box;
+   font-family: 'Creepster',
+     cursive;
+
  }
 
  body {
-   background-color: #34495e;
+   background-color: #3a3d41;
    color: #fff;
    font-family: Roboto, sans-serif;
    display: flex;
@@ -16,6 +21,16 @@
 
  h1 {
    margin: 20px 0 0;
+   color: rgb(197, 4, 4);
+   font-family: 'Creepster',
+     cursive;
+   font-size: 5em;
+ }
+
+ p {
+   font-family: 'Creepster',
+     cursive;
+
  }
 
  .game-container {
@@ -35,7 +50,7 @@
 
  .figure-part {
    display: none;
-   stroke: red;
+   stroke: rgb(197, 4, 4);
 
  }
 
@@ -46,6 +61,11 @@
    display: flex;
    flex-direction: column;
    text-align: right;
+   color: rgb(197, 4, 4);
+   font-family: 'Creepster',
+     cursive;
+
+
  }
 
  .wrong-letters-container p {
@@ -65,7 +85,7 @@
  }
 
  .letter {
-   border-bottom: 3px solid #2980b9;
+   border-bottom: 3px solid #fff;
    display: inline-flex;
    font-size: 30px;
    align-items: center;
@@ -86,10 +106,13 @@
    display: none;
    align-items: center;
    justify-content: center;
+   font-family: 'Creepster',
+     cursive;
+
  }
 
  .popup {
-   background-color: #2980b9;
+   background-color: rgb(197, 4, 4);
    border-radius: 5px;
    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
    padding: 20px;
@@ -99,7 +122,7 @@
  .popup button {
    cursor: pointer;
    background-color: #fff;
-   color: #2980b9;
+   rgb(197, 4, 4);
    border: 0;
    margin-top: 20px;
    padding: 12px 20px;
