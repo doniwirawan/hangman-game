@@ -37,8 +37,8 @@
    padding: 20px 30px;
    position: relative;
    margin: auto;
-   height: 350px;
-   width: 450px;
+   min-height: 450px;
+   min-width: 70%;
  }
 
  .figure-container {
@@ -46,12 +46,12 @@
    stroke: #fff;
    stroke-width: 4px;
    stroke-linecap: round;
+   transform: scale(2);
  }
 
  .figure-part {
    display: none;
    stroke: rgb(197, 4, 4);
-
  }
 
  .wrong-letters-container {
@@ -70,10 +70,13 @@
 
  .wrong-letters-container p {
    margin: 0 0 5px;
+   font-size: 2em;
+   text-decoration: underline;
+
  }
 
  .wrong-letters-container span {
-   font-size: 24px;
+   font-size: 4em;
  }
 
  .word {
@@ -165,6 +168,25 @@
      position: relative;
      margin: auto;
      height: 390px;
-     width: 370px;
+     width: 100%;
+   }
+
+   .figure-container {
+     fill: transparent;
+     stroke: #fff;
+     stroke-width: 4px;
+     stroke-linecap: round;
+     transform: scale(1);
+   }
+
+   .wrong-letters-container p {
+     margin: 0 0 5px;
+     font-size: 1em;
+     text-decoration: underline;
+
+   }
+
+   .wrong-letters-container span {
+     font-size: 2em;
    }
  }
