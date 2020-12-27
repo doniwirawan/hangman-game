@@ -302,7 +302,7 @@ function updateWrongLettersEl() {
 		}
 	});
 	//check if lost
-	if (wrongLetters.length === figureParts.length) {
+	if (wrongLetters.length === figureParts.length + 5) {
 		finalMessage.innerText = 'Sayang sekali anda kalah. 😥';
 		popup.style.display = 'flex';
 	}
