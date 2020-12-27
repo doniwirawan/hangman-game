@@ -180,6 +180,17 @@
    margin: 5px;
  }
 
+ @media(min-height:600px) {
+   .game-container {
+     top: 100px;
+     padding: 20px 30px;
+     position: relative;
+     margin: auto;
+     height: 390px;
+     width: 100%;
+   }
+ }
+
  @media(max-width:450px) {
    h1 {
      text-align: center;
