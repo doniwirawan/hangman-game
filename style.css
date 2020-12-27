@@ -166,7 +166,8 @@
    position: absolute;
    flex-direction: column;
    top: 120px;
-   width: 100%;
+   right: 0;
+
  }
 
  .social a .fa-2x {
@@ -209,11 +210,9 @@
 
    .social {
      display: flex;
+     position: absolute;
+     right: 0;
      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     right: 20px;
-     z-index: -1;
-     top: 250px;
+     top: 120px;
    }
  }
