@@ -204,6 +204,10 @@
    #wrong-letters span {
      font-size: 1.2em;
    }
+
+   .word {
+     top: 270px;
+   }
  }
 
  @media(max-width:450px) {
