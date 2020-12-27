@@ -188,6 +188,21 @@
      margin: auto;
      height: 390px;
      width: 100%;
+     padding: 0 106px;
+   }
+
+   .wrong-letters-container {
+     padding: 0 86px;
+
+   }
+
+   .social {
+     padding: 0 86px;
+
+   }
+
+   #wrong-letters span {
+     font-size: 1.2em;
    }
  }
 
@@ -236,5 +251,13 @@
      color: #fff;
      margin: 5px;
      font-size: 1em;
+   }
+
+   .word {
+     top: 270px;
+   }
+
+   #wrong-letters span {
+     font-size: 1.2em;
    }
  }
