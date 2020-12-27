@@ -215,4 +215,10 @@
      flex-direction: column;
      top: 120px;
    }
+
+   .social a .fa-2x {
+     color: #fff;
+     margin: 5px;
+     font-size: 1em;
+   }
  }
