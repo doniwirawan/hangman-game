@@ -175,6 +175,11 @@
    margin: 5px;
  }
 
+ .social a .fa-2x:hover {
+   color: rgb(197, 4, 4);
+   margin: 5px;
+ }
+
  @media(max-width:450px) {
    h1 {
      text-align: center;
