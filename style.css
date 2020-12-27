@@ -64,6 +64,8 @@
    color: rgb(197, 4, 4);
    font-family: 'Creepster',
      cursive;
+   width: 100%;
+
 
 
  }
@@ -157,6 +159,21 @@
    transform: translateY(-50px);
  }
 
+
+
+ .social {
+   display: flex;
+   position: absolute;
+   flex-direction: column;
+   top: 120px;
+   width: 100%;
+ }
+
+ .social a .fa-2x {
+   color: #fff;
+   margin: 5px;
+ }
+
  @media(max-width:450px) {
    h1 {
      text-align: center;
@@ -188,5 +205,15 @@
 
    .wrong-letters-container span {
      font-size: 2em;
+   }
+
+   .social {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     right: 20px;
+     z-index: -1;
+     top: 250px;
    }
  }
